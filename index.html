@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background-color: #ffffff;
+        min-height: 100vh;
+    }
+      .content{
+        background-color: transparent;
+        width: 80%;
+        height: 50%;
+        position: relative;
+        border: 0px solid white;
+        border-radius: 5px;
+        box-shadow:1.8px 1.2px 5px 0px ;
+        box-sizing: border-box;
+        padding-inline: 10px;
+        margin: 20px;
+        margin-left:40px;
+        overflow: hidden;
+      }
+      .nav h1{
+        color: #0A66C2;
+      }
+      .header{
+        margin: 5px;
+        padding: 10px;
+      }
+      .google-apple button{
+       width: 280px;
+       height: 35px;
+       margin-bottom: 10px;
+       border: 1px solid grey;
+       border-radius: 20px;
+     }
+     .google-apple{
+       display: flex;
+       justify-content: center;
+     }
+     .fa-apple{
+        margin: 7px;
+        font-size: 25px;
+      }
+      .fa-google{
+        margin: 8px;
+        font-size: 20px;
+        color: #34A853;
+      }
+       .line{
+         display: flex;
+         align-items: center;
+         margin: 0px;
+         width: 270px;
+         padding: 8px;
+         margin-left: 15px;
+      }
+      .line .line1{
+        height: 1px;
+        flex:1;
+        background-color: #c5c5c5;
+      }
+      .line p{
+        padding: 0px 5px 0px 5px;
+        font-size: 15px;
+        font-weight: 300;
+      }
+     .input-boxes input{
+        width: 274px;
+        height: 35px;
+        margin-bottom: 16px;
+        border: 1px solid grey;
+        border-radius: 2px;
+      }
+      .input-boxes{
+        display: flex;
+        justify-content: center;
+      }
+      
+      .submit{
+        display: flex;
+        justify-content: center;
+      }
+      .submit button{
+        width: 280px;
+        height: 35px;
+        border: none;
+        border-radius: 20px;
+        background-color: #0A66C2;
+        color: white;
+        margin: 20px;
+      }
+      .p-recovery a{
+        text-decoration: none;
+        color: #0A66C2;
+      }
+      .footer{
+        text-align: center;
+      }
+      .footer a{
+        text-decoration: none;
+        color: #0A66C2;
+      }
+      
+      @media (max-width: 768px){
+        .content{
+          box-shadow: 0px 0px 0px 0px white;
+          border: none;
+          width: 90vw;
+          max-width: 400px;
+          margin-top: 0px;
+          padding-top: 0px;
+        }
+        .nav h1{
+          max-width: 400px;
+          width: 0px auto;
+          padding-left: 18px;
+          font-size: 40px;
+          margin-left: 49px;
+        }
+        .google-apple button{
+          width: 310px;
+          height: 45px;
+          background-color: transparent;
+          font-size: 15px;
+          font-weight: 400;
+        }
+        .input-boxes{
+          font-size: 20px
+        }
+        .input-boxes input{
+          width: 308px;
+          height: 45px;
+        }
+        .p-recovery{
+          margin-left: 38px;
+        }
+        .line{
+          margin: 5px;
+          margin-left: 38px;
+          padding: 5px;
+        }
+        .submit button{
+          font-size: 15px;
+          font-weight: 500;
+          height: 45px;
+          width: 310px;
+        }
+  
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="nav">
+                <h1 class="icon">Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </h1>
+      </div>
+      
+      <div class="content">
+        <form>
+          <h1 class="header">Sign In</h1>
+          
+           <div class="google-apple">
+            <a href="Google account"><button><i class="fa fa-google"  aria-hidden="true"></i> Continue with Google</button></a> <br>
+            </div>
+            
+            <div class="google-apple">
+            <a href="Apple"><button> <i class="fa fa-apple"  aria-hidden="true"></i>Sign in with Apple</button></a>
+            </div>
+            
+            <div class="line">
+           <div class="line1"></div>
+           <p>or</p>
+           <div class="line1"></div>
+          </div>
+          
+          <div class="input-boxes">
+            <input type="text" placeholder="  Email or Phone">
+          </div>
+          
+          <div class="input-boxes">
+            <input type="password" placeholder="  Password">
+          </div>
+          
+          <div class="p-recovery">
+            <a href="#"><b>Forgot password?</b></a>
+          </div>
+          
+          <div class="submit">
+            <a href="#"><button>Sign In</button></a>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+            <p>New to LinkedIn?
+            <a href="#"><b>Join now</b></a></p>
+            
+    </main>
+  </body>
+</html>
